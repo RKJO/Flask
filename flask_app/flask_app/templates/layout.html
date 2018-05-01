@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<title>Flask_app</title>
+<link rel=stylesheet type=type/css href="{{url_for('static', filename='style.css') }}">
+<div class=page>
+    <h1>FLASK_APP</h1>
+    <div class=metanav>
+    {% if not session.loged_in %}
+        <a href="{{url_for('login') }}">log in</a></div>
+    {% else %}
+        <a href="{{url_for('logout') }}">log out</a>
+    {% endif %}
+    </div>
+    {% for message in get_flashed_maessages() %}
+        <div class=flash>{{ message }}</div>
+    {% endfor %}
+    {% block body %}{% endblock %}
+</div>
+

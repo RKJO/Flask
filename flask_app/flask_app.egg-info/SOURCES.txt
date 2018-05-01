@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+flask_app/__init__.py
+flask_app/flask_app.py
+flask_app/schema.sql
+flask_app.egg-info/PKG-INFO
+flask_app.egg-info/SOURCES.txt
+flask_app.egg-info/dependency_links.txt
+flask_app.egg-info/requires.txt
+flask_app.egg-info/top_level.txt
